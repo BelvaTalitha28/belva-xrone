@@ -1,0 +1,28 @@
+public class ArrayMultiDimensi {
+
+    public static void main(String[] args) {
+        System.out.println("==3==");
+        ArrayMultiDimensi siswa = new ArrayMultiDimensi();
+        siswa.tampil(null);
+        siswa.namanis(0);
+
+    }
+
+    public void tampil(String n) {
+        System.out.println("Identitas Siswa ");
+
+    }
+
+    public void namanis(int n) {
+        int nis[][] = {{210651}, {210652}, {210653}};
+        String nama[][] = {{"Ade"}, {"Galih"}, {"Baihaqi"}};
+
+        for (int i = 0; i < 1; i++) {
+            for (int j = 0; j < 1; j++) {
+                System.out.println(nama[1][j] + ":" + nis[1][j]);
+
+            }
+
+        }
+    }
+}
