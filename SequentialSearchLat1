@@ -1,0 +1,25 @@
+import java.util.Scanner;
+public class Latihan1 {
+
+    public static void main(String[] args) {
+
+        String cari;
+        boolean found = false;
+        String[] data = new String[]{"24", "4", "10", "94", "96"};
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Masukkan data yang dicari");
+        cari = sc.nextLine();
+        for (int i = 0; i < data.length; i++) {
+            if (cari.equals(data[i])) {
+                found = true;
+                break;
+            }
+
+        }
+        if (found == true) {
+            System.out.println("DATA DITEMUKAN");
+        } else {
+            System.out.println("DATA TIDAK DITEMUKAN");
+        }
+    }
+}
