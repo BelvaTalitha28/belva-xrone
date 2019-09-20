@@ -1,0 +1,34 @@
+import java.util.Scanner;
+
+public class Praktikum1 {
+
+    public static void main(String[] args) {
+        int cari;
+        boolean found = false;
+        int[] data = new int[]{74, 98, 72, 74, 72, 90, 81, 72};
+        Scanner sc = new Scanner(System.in);
+        System.out.println("data pada array:");
+        for (int i = 0; i < data.length; i++) {
+            System.out.print(data[i] + "\t");
+
+        }
+        System.out.println("\n Masukkan data yang ingin dicari");
+        cari = sc.nextInt();
+        int jumlah = 0;
+        for (int i = 0; i < data.length; i++) {
+            if (cari == data[i]) {
+                jumlah++;
+                found = true;
+
+            }
+        }
+
+        if (found ==true) {
+            System.out.println("Data ditemukan sebanyak " + jumlah + " kali");
+        } else {
+            System.out.println("Data tidak ditemukan!");
+        }
+
+    }
+
+}
